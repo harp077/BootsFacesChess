@@ -15,7 +15,7 @@
         </style>
     </h:head>
     
-    <h:body style="padding-top:55px">
+    <h:body style="padding-top:50px">
         
         <b:container id="menu">
             <h:form>
@@ -93,8 +93,8 @@
                         </b:panel>
                         <b:panel look="primary"
                                  title="Settings #{settings.economyMode?' (restricted to save CPU time)':''}"
-                                 contentStyle="height:140px">
-                            <b:panelGrid colSpans="6,6">
+                                 contentStyle="height:211px">
+                            <h:panelGrid columns="2">
                                 <h:outputText value="Look-ahead:" />
                                 <b:inputText value="#{settings.lookAhead}" />
                                 <h:outputText value="Calculation breadth:" />
@@ -102,21 +102,21 @@
                                 <h:outputText value="multithreading" />
                                 <b:selectBooleanCheckbox
                                     value="#{settings.multithreading}" />
-                            </b:panelGrid>
+                            </h:panelGrid>
                         </b:panel>
 
-                        <b:panel title="statistics" contentStyle="height:100px"
+                        <b:panel title="statistics" contentStyle="height:150px"
                                  look="success">
-                            <b:panelGrid colSpans="6,6">
-                                <h:outputText value="Elapsed time:" />
+                            <h:panelGrid columns="2">
+                                <h:outputText value="Elapsed time = " />
                                 <h:outputText value="#{board.elapsedTime}" />
-                                <h:outputText value="CPU time:" />
+                                <h:outputText value="CPU time = " />
                                 <h:outputText value="#{board.cpuTime}" />
-                                <h:outputText value="evaluated moves:" />
+                                <h:outputText value="tested moves = " />
                                 <h:outputText value="#{board.evaluatedMoves}" />
-                                <h:outputText value="Evaluation:" />
+                                <h:outputText value="Evaluation = " />
                                 <h:outputText value="#{board.info}" />
-                            </b:panelGrid>
+                            </h:panelGrid>
                         </b:panel>
                     </b:column>
                 </b:row>
