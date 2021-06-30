@@ -7,12 +7,14 @@
     xmlns:c="http://java.sun.com/jsp/jstl/core">
 
     <h:head>
+        <!--
         <style>
             .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
             {
                 background-color: #ddd !important;
             }
         </style>
+        -->
     </h:head>
     
     <h:body style="padding-top:50px">
@@ -93,7 +95,7 @@
                         </b:panel>
                         <b:panel look="primary"
                                  title="Settings #{settings.economyMode?' (restricted to save CPU time)':''}"
-                                 contentStyle="height:165px">
+                                 contentStyle="height:185px">
                             <h:panelGrid columns="2">
                                 <h:outputText value="Look-ahead:" />
                                 <b:inputText value="#{settings.lookAhead}" />
@@ -105,7 +107,7 @@
                             </h:panelGrid>
                         </b:panel>
 
-                        <b:panel title="statistics" contentStyle="height:100px"
+                        <b:panel title="statistics" contentStyle="height:110px"
                                  look="success">
                             <h:panelGrid columns="2">
                                 <h:outputText value="Elapsed time = " />

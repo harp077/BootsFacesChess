@@ -14,7 +14,7 @@
     </context-param>
     <context-param>
         <param-name>BootsFaces_THEME</param-name>
-        <param-value>default</param-value>
+        <param-value>darkly</param-value>
     </context-param>
     <welcome-file-list>
         <welcome-file>index.jsf</welcome-file>
