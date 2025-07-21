@@ -27,6 +27,12 @@
             <groupId>net.bootsfaces</groupId>
             <artifactId>bootsfaces</artifactId>
             <version>1.5.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+                    <artifactId>owasp-java-html-sanitizer</artifactId>
+                </exclusion>
+            </exclusions>            
         </dependency>
                 
         <dependency>
